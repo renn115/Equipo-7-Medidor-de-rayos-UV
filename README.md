@@ -21,11 +21,51 @@ Su alcance es académico: demostrar cómo integrar un sensor analógico que gene
 #### - Cable USB para subir el código
 ## Instalación
 #### 1. Descarga o clona este repositorio:
+https://github.com/renn115/Equipo-7-Medidor-de-rayos-UV.git
 #### 2. Abre el medidoruv.ino en el Arduino IDE.
 #### 3.Selecciona tu placa y puerto:
 ##### - Placa: Arduino UNO
 ##### - Puerto: COMx (Windows) o /dev/ttyUSBx (Linux/Mac)
 #### 4. Carga el código en el Arduino con el botón Subir (Upload).
 #### 5.Conecta los componentes según el diagrama de pines:
+| Componente | Pin Arduino | Observaciones |
+|------------|-------------|---------------|
+| Sensor UV VCC | 5V | Alimentación |
+| Sensor UV GND | GND | Tierra |
+| Sensor UV OUT | A0 | Señal Analógica |
+| Todos los (-) | GND | Tierra común |
+## Cómo usarlo
+#### 1.Conecta el Arduino a una fuente USB.
+#### 2.Mueve el sensor directamente a la fuente de luz UV.
+#### 3.El sistema no tiene actuadores, por lo que solo reporta datos.
+#### 4.Observa la respuesta del sistema:
+##### - Abre el Monitor Serial. 
+##### - El monitor mostrará el valor numérico continuo de 0 a 1023 que representa la intensidad de UV.
+## Comportamientos principales
+
+| Estado | Condición | Indicadores |
+|--------|-----------|-------------| 
+| Bajo | valor uv 0 | Valor numérico bajo en Monitor Serial|
+| Alto | valor uv 1023 | Valor numérico alto en Monitor Serial | 
+#### Valores del sensor:
+
+##### Mínimo: 0 (Oscuridad total)
+##### Máximo: 1023 (Intensidad máxima)
+
+## Estructura del proyecto
+medidor-uv-arduino/
+├── README.md           # Descripción del proyecto
+├── medidor_uv.ino      # Código fuente principal
+└── /diagramas          # Diagramas del sistema
+    ├── diagrama-esquematico.png
+    ├── diagrama-bloques.png
+    └── diagrama-pictorico.png
 
 
+
+
+
+
+
+
+    
