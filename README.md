@@ -52,6 +52,7 @@ https://github.com/renn115/Equipo-7-Medidor-de-rayos-UV.git
 ##### Mínimo: 0 (Oscuridad total)
 ##### Máximo: 1023 (Intensidad máxima)
 
+```
 ## Estructura del proyecto
 medidor-uv-arduino/
 ├── README.md           # Descripción del proyecto
@@ -60,6 +61,8 @@ medidor-uv-arduino/
     ├── diagrama-esquematico.png
     ├── diagrama-bloques.png
     └── diagrama-pictorico.png
+```
+
 
 
 
